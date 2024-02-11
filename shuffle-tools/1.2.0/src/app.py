@@ -302,7 +302,7 @@ class Tools(AppBase):
 
         return str(len(item))
 
-    def set_json_key(self, json_object, keys_string, values_string):
+    def set_json_keys(self, json_object, keys_string, values_string):
         self.logger.info(f"OBJ: {json_object}\nKEY: {keys_string}\nVAL: {values_string}")
         if isinstance(json_object, str):
             try:
