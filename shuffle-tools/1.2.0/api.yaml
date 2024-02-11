@@ -828,14 +828,14 @@ actions:
       - name: json_object
         description: The object to edit
         multiline: true
-        example: '{"sender": "me@test.com"}'
+        example: '{"sender1": "me@test.com","sender2": "test@2.com"}'
         required: true
         schema:
           type: string
       - name: key 
         description: The object to add 
-        multiline: false
-        example: "recipients"
+        multiline: true
+        example: "Object.sender1 , Object.sender2"
         required: true
         schema:
           type: string
@@ -852,7 +852,7 @@ actions:
       - name: json_object
         description: The object to edit
         multiline: true
-        example: "{'key': 'value', 'key2': 'value2', 'key3': 'value3'}"
+        example: "{'key1': 'value', 'key2': 'value2', 'key3': 'value3'}"
         required: true
         schema:
           type: string
@@ -860,7 +860,7 @@ actions:
         description: The key(s) to remove
         multiline: true
         required: true
-        example: "key, key3"
+        example: "key1, key2"
         schema:
           type: string
   - name: convert_json_to_tags
