@@ -345,7 +345,7 @@ class Tools(AppBase):
 
             current[last_key] = value
 
-        return json_
+        return json_object
 
 
     def delete_json_keys(self, json_object, keys):
